@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OZON RolePlay - Oficjalna Strona Serwera FiveM</title>
+  <meta name="description" content="Oficjalna strona serwera FiveM OZON RolePlay. Dołącz do elitarnej społeczności RP, składaj tickety, podania i graj z nami!" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Tło animowane neonowe -->
+  <div class="bg-glow"></div>
+  <div class="cyber-grid"></div>
+
+  <!-- Nawigacja -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand">
+        <img src="logo.png" alt="OZON RP Logo" class="brand-logo" />
+        <span class="brand-text">OZON <span class="neon-text">RP</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Start</a>
+        <a href="#about" class="nav-link"><i class="fa-solid fa-fire"></i> O Serwerze</a>
+        <a href="#team" class="nav-link"><i class="fa-solid fa-users"></i> Ekipa</a>
+        <a href="#rules" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> Regulamin</a>
+        <a href="#tickets" class="nav-link"><i class="fa-solid fa-headset"></i> Pomoc / Tickety</a>
+        <a href="#apply" class="nav-link"><i class="fa-solid fa-file-signature"></i> Podania</a>
+        <a href="#admin" class="nav-link nav-btn-admin"><i class="fa-brands fa-discord"></i> Panel Admina</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://discord.gg/ozonroleplay" target="_blank" class="btn btn-discord">
+          <i class="fa-brands fa-discord"></i> <span>Discord</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEKCJA HERO -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot pulse"></span> SERWER FIVEM ROLEPLAY
+      </div>
+      <h1 class="hero-title">
+        WITAJ W ŚWIECIE <br />
+        <span class="neon-purple glow-text">OZON ROLEPLAY</span>
+      </h1>
+      <p class="hero-subtitle">
+        Prawdziwe emocje, autorskie rozwiązania, dopracowana ekonomia i dojrzała społeczność. 
+        Stwórz swoją unikalną historię w Los Santos już dzisiaj!
+      </p>
+
+      <div class="hero-buttons">
+        <a href="javascript:void(0)" onclick="copyConnect()" class="btn btn-primary">
+          <i class="fa-solid fa-play"></i> Dołącz do Gry (F8)
+        </a>
+        <a href="https://discord.gg/ozonroleplay" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-discord"></i> Nasz Discord
+        </a>
+      </div>
+
+      <!-- Statystyki na żywo / Informacje -->
+      <div class="server-status-card">
+        <div class="status-item">
+          <div class="status-icon"><i class="fa-solid fa-signal text-neon"></i></div>
+          <div class="status-info">
+            <span class="label">Status Serwera</span>
+            <span class="val online"><i class="fa-solid fa-circle"></i> Online / Wkrótce</span>
+          </div>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item">
+          <div class="status-icon"><i class="fa-solid fa-users text-neon"></i></div>
+          <div class="status-info">
+            <span class="label">Społeczność</span>
+            <span class="val" id="discordCount">discord.gg/ozonroleplay</span>
+          </div>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item">
+          <div class="status-icon"><i class="fa-solid fa-microchip text-neon"></i></div>
+          <div class="status-info">
+            <span class="label">Tryb Rozgrywki</span>
+            <span class="val">Hard / Medium RP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O SERWERZE -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ZALETY</span>
+        <h2 class="section-title">DLACZEGO <span class="neon-purple">OZON RP?</span></h2>
+        <p class="section-desc">Zaprojektowaliśmy serwer z dbałością o każdy detal, stawiając na płynność i immersję.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="card feature-card">
+          <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3>Wysoka Optymalizacja</h3>
+          <p>Maksymalna liczba FPS nawet w centrum miasta. Żadnych zbędnych, obciążających skryptów.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="card-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+          <h3>Zbalansowana Ekonomia</h3>
+          <p>Zarabianie pieniędzy wymaga zaangażowania, a każdy zakup ma realną wartość na rynku.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Aktywna Administracja</h3>
+          <p>Dojrzały i sprawiedliwy zarząd, dbający o wysoki poziom roleplayu i szybką pomoc.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="card-icon"><i class="fa-solid fa-car-side"></i></div>
+          <h3>Autorskie Pojazdy i Skrypty</h3>
+          <p>Unikalne modele aut z dopracowanymi handlingami oraz systemy, których nie znajdziesz nigdzie indziej.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="card-icon"><i class="fa-solid fa-handcuffs"></i></div>
+          <h3>Frakcje Publiczne</h3>
+          <p>Profesjonalne LSPD, EMS oraz LSCM z rozbudowanymi procedurami i szkoleniami.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="card-icon"><i class="fa-solid fa-mask"></i></div>
+          <h3>Strefa Przestępcza</h3>
+          <p>Rozbudowane możliwości dla gangów, mafii i organizacji przestępczych.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZESPÓŁ / EKIPA -->
+  <section id="team" class="section bg-darker">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LUDZIE Z PASJĄ</span>
+        <h2 class="section-title">EKIPA <span class="neon-purple">OZON RP</span></h2>
+        <p class="section-desc">Osoby odpowiedzialne za rozwój, porządek i funkcjonowanie projektu.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="card team-card">
+          <div class="team-avatar">
+            <img src="logo.png" alt="Właściciel" />
+            <span class="role-badge badge-owner">WŁAŚCICIEL</span>
+          </div>
+          <h3>Zarząd Główny</h3>
+          <p class="role-title">Projekt & Zarządzanie</p>
+          <div class="team-links">
+            <a href="https://discord.gg/ozonroleplay" target="_blank"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="card team-card">
+          <div class="team-avatar">
+            <img src="logo.png" alt="Developer" />
+            <span class="role-badge badge-dev">PROGRAMISTA</span>
+          </div>
+          <h3>Dział Techniczny</h3>
+          <p class="role-title">Skrypty & Optymalizacja</p>
+          <div class="team-links">
+            <a href="https://discord.gg/ozonroleplay" target="_blank"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="card team-card">
+          <div class="team-avatar">
+            <img src="logo.png" alt="Community Manager" />
+            <span class="role-badge badge-mod">MODERACJA</span>
+          </div>
+          <h3>Opiekunowie Społeczności</h3>
+          <p class="role-title">Tickety & Pomoc Graczom</p>
+          <div class="team-links">
+            <a href="https://discord.gg/ozonroleplay" target="_blank"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGULAMIN -->
+  <section id="rules" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ZASADY ROZGRYWKI</span>
+        <h2 class="section-title">REGULAMIN <span class="neon-purple">SERWERA</span></h2>
+        <p class="section-desc">Znajomość regulaminu jest obowiązkowa dla każdego gracza przebywającego na serwerze.</p>
+      </div>
+
+      <div class="rules-accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fa-solid fa-scale-balanced text-neon"></i> §1. Postanowienia Ogólne</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+          <div class="accordion-content">
+            <p>1.1. Nieznajomość regulaminu nie zwalnia z jego przestrzegania.</p>
+            <p>1.2. Każdy gracz zobowiązany jest do poszanowania innych uczestników rozgrywki.</p>
+            <p>1.3. Wszelkie próby wykorzystywania błędów gry (bug abusing) lub używania cheatów kończą się permanentną blokadą.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fa-solid fa-gamepad text-neon"></i> §2. Zasady RolePlay</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+          <div class="accordion-content">
+            <p>2.1. <strong>PowerGaming (PG)</strong> - Zabronione jest zmuszanie innych graczy do akcji bez możliwości reakcji.</p>
+            <p>2.2. <strong>MetaGaming (MG)</strong> - Wykorzystywanie informacji zdobytych poza grą (np. z Discorda/streamów) w rozgrywce jest surowo zakazane.</p>
+            <p>2.3. <strong>Random Deathmatch (RDM) / Vehicle Deathmatch (VDM)</strong> - Bezzasadne atakowanie graczy lub rozjeżdżanie pojazdami jest karane.</p>
+            <p>2.4. <strong>Fear RP</strong> - Masz obowiązek odgrywać strach o własne życie w sytuacjach zagrożenia (np. pod celownikiem broni).</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fa-solid fa-microphone text-neon"></i> §3. Komunikacja i Voice Chat</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+          <div class="accordion-content">
+            <p>3.1. Sprawny mikrofon bez szumów i zakłóceń jest wymagany do gry.</p>
+            <p>3.2. Prowadzenie rozmów OOC (Out of Character) na czacie głosowym jest zabronione. Do spraw pozagrowych służy kanał ticketów na Discordzie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARZ TICKETÓW (POMOC) -->
+  <section id="tickets" class="section bg-darker">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">WSPARCIE DLA GRACZY</span>
+        <h2 class="section-title">STWÓRZ <span class="neon-purple">TICKET POMOCY</span></h2>
+        <p class="section-desc">Masz problem techniczny, pytanie do administracji lub chcesz zgłosić błąd? Wypełnij formularz poniżej.</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="ticketForm" class="cyber-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fa-brands fa-discord"></i> Twój Discord Tag / Nazwa</label>
+              <input type="text" id="tDiscord" placeholder="np. jan_kowalski / Janek#1234" required />
+            </div>
+            <div class="form-group">
+              <label><i class="fa-solid fa-id-card"></i> Twoje ID w grze / Nick Steam</label>
+              <input type="text" id="tSteam" placeholder="np. ID: 45 / JanekRP" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-list-check"></i> Kategoria Zgłoszenia</label>
+            <select id="tCategory" required>
+              <option value="Problem Techniczny / Błąd gry">Problem Techniczny / Błąd gry</option>
+              <option value="Zgłoszenie Gracza (Łamanie regulaminu)">Zgłoszenie Gracza (Łamanie regulaminu)</option>
+              <option value="Utrata itemów / Odszkodowanie">Utrata itemów / Odszkodowanie</option>
+              <option value="Pytanie ogólne">Pytanie ogólne</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-comment-dots"></i> Opis problemu</label>
+            <textarea id="tMessage" rows="5" placeholder="Opisz dokładnie sytuację, podaj datę, godzinę oraz ewentualne dowody (linki do klipów YouTube/Medal/Imgur)..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Wyślij Ticket do Administracji
+          </button>
+          <div id="ticketAlert" class="form-alert"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARZ PODAŃ DO ADMINISTRACJI -->
+  <section id="apply" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">REKRUTACJA</span>
+        <h2 class="section-title">PODANIE DO <span class="neon-purple">ADMINISTRACJI</span></h2>
+        <p class="section-desc">Chcesz pomóc w budowaniu serwera OZON RP? Dołącz do naszego zespołu!</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="applyForm" class="cyber-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fa-solid fa-user"></i> Imię i Wiek</label>
+              <input type="text" id="aNameAge" placeholder="np. Michał, 18 lat" required />
+            </div>
+            <div class="form-group">
+              <label><i class="fa-brands fa-discord"></i> Discord Tag & ID</label>
+              <input type="text" id="aDiscord" placeholder="np. michal_rp (ID: 123456789...)" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-briefcase"></i> Ranga, na którą aplikujesz</label>
+            <select id="aRank" required>
+              <option value="Support / Pomocnik">Support / Pomocnik</option>
+              <option value="Moderator">Moderator</option>
+              <option value="Opiekun Frakcji (LSPD/EMS)">Opiekun Frakcji (LSPD/EMS)</option>
+              <option value="Media / Social Media Team">Media / Social Media Team</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-history"></i> Doświadczenie na innych serwerach FiveM</label>
+            <textarea id="aExperience" rows="3" placeholder="Gdzie pełniłeś podobną rolę? Jakie znasz komendy administracyjne?" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-heart"></i> Dlaczego akurat Ty i OZON RolePlay?</label>
+            <textarea id="aMotivation" rows="4" placeholder="Napisz kilka zdań o sobie, ile czasu dziennie możesz poświęcić na serwer..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-check-circle"></i> Wyślij Podanie
+          </button>
+          <div id="applyAlert" class="form-alert"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANEL ADMINA / LOGOWANIE DISCORD -->
+  <section id="admin" class="section bg-darker">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">STREFA ZARZĄDU</span>
+        <h2 class="section-title">PANEL <span class="neon-purple">ADMINISTRATORA</span></h2>
+        <p class="section-desc">Dostęp wyłącznie dla uprawnionych członków administracji OZON RP.</p>
+      </div>
+
+      <div class="admin-box card">
+        <!-- Widok dla niezalogowanego -->
+        <div id="adminLoggedOut" class="admin-state">
+          <div class="admin-icon-glow">
+            <i class="fa-solid fa-shield-cat"></i>
+          </div>
+          <h3>Autoryzacja Discord OAuth2</h3>
+          <p>Aby przejść do panelu zarządzania, musisz zalogować się kontem Discord posiadającym rangę administracyjną na serwerze OZON RolePlay.</p>
+          <div class="auth-buttons">
+            <button id="discordLoginBtn" class="btn btn-discord btn-lg">
+              <i class="fa-brands fa-discord"></i> Zaloguj przez Discord
+            </button>
+            <button id="demoLoginBtn" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-key"></i> Podgląd Panelu (Tryb Demo)
+            </button>
+          </div>
+        </div>
+
+        <!-- Widok po zalogowaniu -->
+        <div id="adminLoggedIn" class="admin-state" style="display: none;">
+          <div class="admin-user-bar">
+            <div class="user-meta">
+              <img id="adminAvatar" src="logo.png" alt="Avatar" class="avatar-circle" />
+              <div>
+                <h4 id="adminUsername">Administrator OZON</h4>
+                <span class="admin-badge"><i class="fa-solid fa-shield"></i> Zweryfikowany Admin</span>
+              </div>
+            </div>
+            <button id="adminLogoutBtn" class="btn btn-sm btn-outline">
+              <i class="fa-solid fa-right-from-bracket"></i> Wyloguj
+            </button>
+          </div>
+
+          <!-- Zakładki w panelu -->
+          <div class="panel-tabs">
+            <button class="tab-btn active" data-tab="tab-tickets"><i class="fa-solid fa-headset"></i> Nadesłane Tickety</button>
+            <button class="tab-btn" data-tab="tab-applies"><i class="fa-solid fa-file-signature"></i> Podania do Administracji</button>
+            <button class="tab-btn" data-tab="tab-settings"><i class="fa-solid fa-sliders"></i> Szybka Konfiguracja</button>
+          </div>
+
+          <div class="tab-content" id="tab-tickets">
+            <div class="panel-header-sub">
+              <h4>Ostatnie Zgłoszenia Graczy</h4>
+              <button onclick="clearStoredData('tickets')" class="btn-text text-danger"><i class="fa-solid fa-trash"></i> Wyczyść listę</button>
+            </div>
+            <div id="ticketsList" class="data-list">
+              <div class="empty-state">Brak nowych ticketów w lokalnej pamięci.</div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-applies" style="display: none;">
+            <div class="panel-header-sub">
+              <h4>Ostatnie Podania o Rekrutację</h4>
+              <button onclick="clearStoredData('applies')" class="btn-text text-danger"><i class="fa-solid fa-trash"></i> Wyczyść listę</button>
+            </div>
+            <div id="appliesList" class="data-list">
+              <div class="empty-state">Brak nowych podań w lokalnej pamięci.</div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-settings" style="display: none;">
+            <div class="settings-form">
+              <h4>Ustawienia Webhooka Discord</h4>
+              <p class="settings-hint">Wklej URL Discord Webhook z Twojego kanału administracyjnego, aby zgłoszenia trafiały bezpośrednio na Discorda.</p>
+              <div class="form-group">
+                <label>Discord Webhook URL</label>
+                <input type="text" id="webhookInput" placeholder="https://discord.com/api/webhooks/..." />
+              </div>
+              <button onclick="saveWebhookSettings()" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-floppy-disk"></i> Zapisz Webhook
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOPKA -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="logo.png" alt="OZON RP" class="footer-logo" />
+        <div>
+          <h3>OZON <span class="neon-purple">ROLEPLAY</span></h3>
+          <p>© 2026 OZON RolePlay. Wszelkie prawa zastrzeżone.</p>
+          <p class="small-text">OZON RP nie jest powiązany z Rockstar Games ani Take-Two Interactive.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Strona Główna</a>
+        <a href="#rules">Regulamin</a>
+        <a href="#tickets">Tickety</a>
+        <a href="https://discord.gg/ozonroleplay" target="_blank"><i class="fa-brands fa-discord"></i> discord.gg/ozonroleplay</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
